@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -11,17 +12,31 @@
         android:gravity="center"
         android:layout_margin="100sp">
 
-        <Button
-            android:id="@+id/button2"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            app:srcCompat="@mipmap/rajiya_scan_transparent" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/scannerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="goToScanner"
+            android:text="@string/menu_scan_text" />
+
+        <Button
+            android:id="@+id/scansListBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_scans_list_text" />
+
+        <Button
+            android:id="@+id/aboutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_about_text" />
+
     </LinearLayout>
 
 </LinearLayout>
