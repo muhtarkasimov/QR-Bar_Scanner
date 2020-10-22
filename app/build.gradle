@@ -6,7 +6,13 @@ android {
 
     defaultConfig {
         applicationId "com.example.scanner"
-        minSdkVersion 16
+        /**
+         * Manifest merger failed : uses-sdk:minSdkVersion 16 cannot be smaller than version 19 declared in library [com.budiyev.android:code-scanner:2.1.0] C:\Users\muhpc\.gradle\caches\transforms-2\files-2.1\f83913d8084f70c0f3eb5646bd3a2acf\jetified-code-scanner-2.1.0\AndroidManifest.xml as the library might be using APIs not available in 16
+         * Suggestion: use a compatible library with a minSdk of at most 16,
+         * or increase this project's minSdk version to at least 19,
+         * or use tools:overrideLibrary="com.budiyev.android.codescanner" to force usage (may lead to runtime failures)
+         **/
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -30,5 +36,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //my dependencies:
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
 
 }
