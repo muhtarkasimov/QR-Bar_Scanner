@@ -10,12 +10,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_margin="100sp">
+        android:layout_margin="50dp">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/main_menu_logo_description"
             app:srcCompat="@mipmap/rajiya_scan_transparent" />
 
         <Button

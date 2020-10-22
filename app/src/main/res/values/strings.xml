@@ -3,4 +3,5 @@
     <string name="menu_scan_text">Scanner</string>
     <string name="menu_about_text">About</string>
     <string name="menu_scans_list_text">Scans List</string>
+    <string name="main_menu_logo_description">transparent logo</string>
 </resources>
