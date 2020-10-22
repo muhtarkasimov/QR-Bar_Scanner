@@ -23,7 +23,7 @@
             android:id="@+id/scannerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="goToScanner"
+            android:onClick="goToScanList"
             android:text="@string/menu_scan_text" />
 
         <Button

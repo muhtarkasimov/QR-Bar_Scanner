@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.scanner">
-
-    <!--Scanner's permission-->
+    <!-- Scanner's permission -->
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -12,7 +11,8 @@
         android:roundIcon="@mipmap/rajiya_scan_green"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScannerActivity"></activity>
+        <activity android:name=".TemporaryList"></activity>
+        <activity android:name=".ScannerActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

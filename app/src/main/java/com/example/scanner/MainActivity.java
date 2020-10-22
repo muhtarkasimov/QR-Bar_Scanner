@@ -23,9 +23,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void goToScanner(View view) {
-        Intent intent = new Intent(this, ScannerActivity.class);
+    public void goToScanList(View view) {
+        Intent intent = new Intent(this, TemporaryList.class);
         startActivity(intent);
-
     }
 }
